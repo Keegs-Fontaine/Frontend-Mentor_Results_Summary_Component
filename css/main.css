@@ -1,0 +1,44 @@
+:root {
+  /* Colors */
+  --clr-neutral-999: white;
+  --clr-neutral-800: hsl(221, 100%, 96%);
+  --clr-neutral-600: hsl(231, 100%, 89%);
+  --clr-neutral-400: hsl(224, 30%, 27%);
+
+  --clr-prim-900: hsl(0, 100%, 67%);
+  --clr-prim-800: hsl(39, 100%, 56%);
+  --clr-prim-500: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --grad-900: hsl(252, 100%, 67%);
+  --grad-800: hsl(241, 81%, 54%);
+
+  --grad-600: hsla(256, 72%, 46%, 1);
+  --grad-500: hsla(241, 72%, 46%, 0);
+
+  /* Font */
+  --fw: 500;
+  --fw: 700;
+  --fw: 800;
+}
+
+/* Basic Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+}
