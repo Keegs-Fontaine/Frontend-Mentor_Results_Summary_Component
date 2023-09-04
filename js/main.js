@@ -1,3 +1,6 @@
+import data from "./data.js";
+console.log(data);
+
 const summaryBody = document.querySelector("[data-summaryBody]");
 
 function summaryItem(category, score, icon, color) {
@@ -16,12 +19,6 @@ function summaryItem(category, score, icon, color) {
   summaryBody.innerHTML += sumItem;
 }
 
-async function importData() {
-  const res = await fetch("../data.json");
-  const data = await res.json();
-
-  data.forEach((sumItem) => {
-    summaryItem(sumItem.category, sumItem.score, sumItem.icon, sumItem.color);
-  });
-}
-importData();
+data.forEach((sumItem) => {
+  summaryItem(sumItem.category, sumItem.score, sumItem.icon, sumItem.color);
+});
