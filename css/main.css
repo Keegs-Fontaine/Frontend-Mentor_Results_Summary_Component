@@ -17,9 +17,9 @@
   --grad-500: hsla(241, 72%, 46%, 0);
 
   /* Font */
-  --fw: 500;
-  --fw: 700;
-  --fw: 800;
+  --fw-light: 500;
+  --fw-medium: 700;
+  --fw-bold: 800;
 }
 
 /* Basic Reset */
@@ -41,4 +41,60 @@ h6 {
 a {
   text-decoration: none;
   font: inherit;
+}
+
+/* GLOBAL FONT */
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* START OF MAIN SITE STYLING */
+.result {
+  height: 20rem;
+  padding-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--grad-900),
+    var(--grad-800)
+  );
+}
+
+.result__title {
+  color: var(--clr-neutral-600);
+}
+
+.result__value {
+  aspect-ratio: 1;
+  padding: 1rem;
+  border-radius: 100%;
+  font-weight: var(--fw-medium);
+  color: var(--clr-neutral-999);
+  background-image: linear-gradient(
+    to bottom,
+    var(--grad-600),
+    var(--grad-500)
+  );
+}
+
+.result__value h2 {
+  font-size: 3.5rem;
+}
+
+.result__value p {
+  color: var(--clr-neutral-600);
+}
+
+.result__response h2 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-medium);
+  color: var(--clr-neutral-999);
+}
+
+.result__response p {
+  color: var(--clr-neutral-600);
 }

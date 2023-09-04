@@ -2,8 +2,8 @@ const summaryBody = document.querySelector("[data-summaryBody]");
 
 function summaryItem(category, score, icon) {
   const sumItem = `
-          <section>
-              <img src="${icon}" />
+          <section class="summary-item">
+              <img src="${icon}" alt="icon" />
               <h3>${category}</h3>
               <h4><span>${score}</span>/100</h4>
           </section>
