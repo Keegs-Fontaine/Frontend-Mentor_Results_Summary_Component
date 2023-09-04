@@ -147,6 +147,16 @@ html {
   color: var(--clr-neutral-800);
   background-color: var(--clr-neutral-400);
   border-radius: 999rem;
+  transition: 0.2s ease-in-out all;
+}
+
+.summary__btn:hover,
+.summary__btn:focus {
+  background-image: linear-gradient(
+    to bottom,
+    var(--grad-900),
+    var(--grad-800)
+  );
 }
 
 .attribution {
