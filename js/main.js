@@ -1,5 +1,4 @@
 import data from "./data.js";
-console.log(data);
 
 const summaryBody = document.querySelector("[data-summaryBody]");
 
