@@ -39,6 +39,12 @@ a {
   font: inherit;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+}
+
 /* GLOBAL FONT */
 html {
   font-family: "Hanken Grotesk", sans-serif;
@@ -108,17 +114,46 @@ html {
 }
 
 .summary__title {
-  padding-block: 1rem;
+  padding-block: 1.5rem;
   font-size: 1.2rem;
 }
 
 .summary__item {
   padding: 1rem;
-  margin-block: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   border-radius: 0.5rem;
 }
 
 .summary__score {
   margin-left: auto;
+  font-weight: var(--fw-medium);
+  color: var(--clr-neutral-600);
+}
+
+.summary__score span {
+  margin-right: 0.2rem;
+  color: var(--clr-neutral-400);
+}
+
+.summary__category {
+  margin-left: 0.75rem;
+}
+
+.summary__btn {
+  width: 100%;
+  padding-block: 1rem;
+  margin-block: 0.5rem;
+  color: var(--clr-neutral-800);
+  background-color: var(--clr-neutral-400);
+  border-radius: 999rem;
+}
+
+.attribution {
+  margin-block: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
